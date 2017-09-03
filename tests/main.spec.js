@@ -1,3 +1,5 @@
+/* eslint no-undef: 0 */
+
 import { expect } from 'chai'
 import main from '../src/main.js'
 
