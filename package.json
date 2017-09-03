@@ -1,0 +1,27 @@
+{
+  "name": "poc-npm",
+  "version": "0.0.1",
+  "description": "POC about npm repo and scripts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nandomoreirame/poc-npm.git"
+  },
+  "keywords": [
+    "poc",
+    "npm",
+    "scripts",
+    "js",
+    "javascripts",
+    "tests"
+  ],
+  "author": "Fernando Moreira <nandomoreira.me@gmail.com> (https://nandomoreira.me)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nandomoreirame/poc-npm/issues"
+  },
+  "homepage": "https://github.com/nandomoreirame/poc-npm#readme"
+}
