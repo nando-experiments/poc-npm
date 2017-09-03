@@ -1,6 +1,6 @@
 {
   "name": "poc-npm",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "POC about npm repo and scripts",
   "main": "src/main.js",
   "scripts": {
