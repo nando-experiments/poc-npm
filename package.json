@@ -9,7 +9,7 @@
     "test:coverage": "nyc npm test",
     "test:dev": "npm test -- -w",
     "precommit": "npm run lint",
-    "prepush": "npm run test"
+    "prepush": "npm run test:coverage"
   },
   "nyc": {
     "functions": 70,
