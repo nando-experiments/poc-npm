@@ -2,12 +2,24 @@
   "name": "poc-npm",
   "version": "0.0.1",
   "description": "POC about npm repo and scripts",
-  "main": "src/index.js",
+  "main": "src/main.js",
   "scripts": {
     "lint": "eslint ./src/*.js",
-    "test": "mocha ./tests/**/*.spec.js",
+    "test": "NODE_ENV=test mocha --compilers js:babel-core/register ./tests/**/*.spec.js",
+    "test:coverage": "nyc npm test",
+    "test:dev": "npm test -- -w",
     "precommit": "npm run lint",
     "prepush": "npm run test"
+  },
+  "nyc": {
+    "functions": 70,
+    "lines": 70,
+    "check-coverage": true,
+    "exclude": "tests/**",
+    "reporter": [
+      "text",
+      "html"
+    ]
   },
   "repository": {
     "type": "git",
@@ -28,6 +40,8 @@
   },
   "homepage": "https://github.com/nandomoreirame/poc-npm#readme",
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
     "chai": "^4.1.2",
     "eslint": "^4.6.1",
     "eslint-config-standard": "^10.2.1",
